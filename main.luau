@@ -1,7 +1,6 @@
 (run_on_thread or run_on_actor)(
 	(getactorthreads or getactors)()[1],
  	[=[
-
 local Service = setmetatable({}, {
 	__call = function(Self, Service)
 		return cloneref(game.GetService(game, Service))
